@@ -1,12 +1,12 @@
 #include <stdio.h> 
 
 /**
-  * main - Prints numbers between 012 to 789.
-  *
-  * Return: Always 0 (Success)
+ * main - Prints numbers between 012 to 789.
+ *
+ * Return: Always 0 (Success)
  */
    int main(void) 
-{{
+{
 	int i, e, g;
 
 	i = 48;
@@ -21,7 +21,7 @@
 			 g = 48;
 			 while (g < 58) 
 			{
-				 if (e != i && e != g && i != g && e < i && i < g)
+				 if (e != i && e != g && i != g && e < i && i < g)
 				{
 					 putchar(e);
 					 putchar(i); 
@@ -35,11 +35,11 @@
 				}
 				g++; 
 			}
-			  i++;
+			i++;
 		}
-		 e++;
+		e++;
 	}
 	putchar('\n'); 
-	 return (0); 
+	return (0);
  }
  
