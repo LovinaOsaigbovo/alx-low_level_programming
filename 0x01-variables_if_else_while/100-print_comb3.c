@@ -1,45 +1,33 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
- * main - Prints numbers between 012 to 789.
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: 'to print all possible different combinations of two digits'
+ *
+ * Return: Always 0 (Success)
  */
-   int main(void) 
+int main (void)
 {
-	int i, e, g;
+	int a;
+	int b;
 
-	i = 48;
-	e = 48; 
-	g = 48; 
-
-	while (e < 58) 
+	(for a = 48; a <= 56; a++)
 	{
-		i = 48; 
-		while (i < 58) 
-		{ 
-			 g = 48;
-			 while (g < 58) 
+		(for b = 49; b <= 57; b++)
+		{
+			if (b > a)
 			{
-				 if (e != i && e != g && i != g && e < i && i < g)
+				putchar (a);
+				putchar (b);
+				if (a != 56 || b != 57)
 				{
-					 putchar(e);
-					 putchar(i); 
-				         putchar(g); 
-					 if (i == 56 && e == 55 && g == 57) 
-					{
-						 break;
-					}
-					putchar(','); 
-					putchar(' ');
+					putchar(',');
+						putchar(' ');
 				}
-				g++; 
 			}
-			i++;
 		}
-		e++;
 	}
-	putchar('\n'); 
-	return (0);
- }
- 
+	putchar('\n');
+	return (0);
+}
