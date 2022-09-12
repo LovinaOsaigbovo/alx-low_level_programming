@@ -1,34 +1,39 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
- * date:11-09-2022
+ * Description: using main program
+ * Return: 0 (success)
  */
 int main(void)
 {
 	int i, j, k;
-	
-	for (i = 48; i < 58; i++)
+
+	i = 48;
+	j = 48;
+	k = 48;
+	while (i < 58)
 	{
-		for (j = 49; j < 58; j++)
+		j = i + 1;
+		while (j < 58)
 		{
-			for (k = 50; k < 58; k++)
+			k = j + 1;
+			while (k < 58)
 			{
-				if (k > j && j > i)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i < 55 || j < 56 || k < 57)
 				{
-					putchar(i);
-					putchar(j)
-					putchar(k);
-					if (i != 55 || j != 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(44);
+					putchar(32);
 				}
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
