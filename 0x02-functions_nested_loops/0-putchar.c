@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * comments really don't matter
+ *main - Entry point
  *
- * anyway this c-file is to print characters
+ *Return: nothing, return void
  */
 
 int main(void)
