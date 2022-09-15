@@ -1,4 +1,8 @@
 #ifndef HOLBERTON_H_INCLUDED
 #define HOLBERTON_H_INCLUDED
 
-int main(void)
+#include <stdio.h>
+
+void positive_or_negative(int i);
+
+#endif /* MAIN_H */
