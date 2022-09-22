@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-  * main - this is the first and most important function in any script
   * infinite_add - adds two numbers
   * @n1: number1
   * @n2: number2
